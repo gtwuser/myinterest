@@ -6,6 +6,7 @@ Remote changes
 
 Testing pull on local master from remote origin master
 
-
 Changes from feature branch
+
+Few more changes from feature branch
 
