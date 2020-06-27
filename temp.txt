@@ -1,0 +1,10 @@
+package cxcloud.example
+{{ range .}}
+    default {{.Methods}} = false
+    {{.Methods}} {
+    	input.method == {{.HttpMethod}}
+    	portal_account.roles[_] == [{{if .SuperAdmin}}"superAdmin",{{end}}{{if .PortalAdmin}}"admin",{{end}}{{if .PortalFullUser}}"fulluser",{{end}}{{if .PortalViewer}}"viewer",{{end}}{{if .FullUser}}"internalFullUser",{{end}} {{if .Viewer}}"internalviewer"{{end}}]
+    	[header, payload, sig] := io.jwt.decode(input.token)
+    }
+{{end}}
+
