@@ -10,3 +10,5 @@ Changes from feature branch
 
 Few more changes from feature branch
 
+Checkout test
+
