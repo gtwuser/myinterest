@@ -11,3 +11,6 @@ Changes from feature branch
 Few more changes from feature branch
 
 Stash changes 
+
+Checkout test
+
