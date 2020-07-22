@@ -13,6 +13,7 @@ import (
 	"strings"
 )
 
+// Policy bundle
 func main() {
 	BundlePolicy("/Users/kapjoshi/Documents/amp/myinterest/qrcode/cmd/d1/d2/test/best/status/", "/Users/kapjoshi/Desktop/my.tar.gz")
 }
