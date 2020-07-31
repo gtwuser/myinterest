@@ -1,0 +1,27 @@
+syntax = "proto3";
+
+package greet;
+option go_package="pob";
+
+message GreetRequest{
+    string fname = 1;
+    string lname = 2;
+}
+
+message GreetResponse{
+    string greet = 1;
+}
+
+message RecipeRequest {
+    string name = 1;
+    int64 durationInHour = 2;
+}
+
+message RecipeResponse {
+    string taste = 1;
+}
+
+service GreetService{
+    rpc Greet (GreetRequest) returns (GreetResponse);
+    rpc Recipes (RecipeRequest) returns (RecipeResponse);
+}

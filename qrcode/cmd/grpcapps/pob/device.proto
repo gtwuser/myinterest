@@ -1,0 +1,33 @@
+syntax = "proto3";
+
+option go_package="qrcode/cmd/grpcapps/pob";
+package device;
+
+import "google/api/annotations.proto";
+
+message DeviceRequest {
+    DeviceInfo deviceInfo = 1;
+}
+message DeviceInfo{
+    string ip = 1;
+    string type = 2;
+}
+
+message DeviceResponse{
+    DeviceDetails devDetails = 1;
+}
+
+message DeviceDetails{
+    string name = 1;
+    string type = 2;
+}
+
+service ManageDevice{
+    rpc ManagedDevice(DeviceRequest) returns (DeviceResponse){
+        option (google.api.http) = {
+            post: "/v1/managedDevices"
+            body: "*"
+        };
+    }
+}
+

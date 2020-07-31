@@ -10,7 +10,13 @@ import (
 )
 
 func main() {
-	http.HandleFunc("/image", func(writer http.ResponseWriter, request *http.Request) {
+	http.HandleFunc("/image", img())
+
+	log.Fatal(http.ListenAndServe(`:8080`, nil))
+}
+
+func img() func(writer http.ResponseWriter, request *http.Request) {
+	return func(writer http.ResponseWriter, request *http.Request) {
 		imgPath := flag.String("path", "", "abs path to image file")
 		flag.Parse()
 		f, _ := os.Open(*imgPath)
@@ -19,7 +25,5 @@ func main() {
 
 		writer.Header().Set(`Content-Type`, `image/jpeg`)
 		writer.Write(all)
-	})
-
-	log.Fatal(http.ListenAndServe(`:8080`, nil))
+	}
 }
