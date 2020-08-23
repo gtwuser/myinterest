@@ -5,6 +5,8 @@ go 1.13
 require (
 	github.com/golang/protobuf v1.4.2
 	github.com/grpc-ecosystem/grpc-gateway v1.14.6
+	github.com/lestrrat-go/jwx v1.0.4 // indirect
+	github.com/okta/okta-jwt-verifier-golang v1.0.0 // indirect
 	github.com/open-policy-agent/opa v0.21.0
 	github.com/pkg/errors v0.9.1 // indirect
 	github.com/sirupsen/logrus v1.4.1
