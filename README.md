@@ -14,8 +14,4 @@ Stash changes
 
 Checkout test
 
-A
-B
-C
-D
-
+Minions :) 
