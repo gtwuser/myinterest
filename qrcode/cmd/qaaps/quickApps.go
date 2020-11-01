@@ -2,6 +2,8 @@ package main
 
 import (
 	"fmt"
+	"io/ioutil"
+	"regexp"
 	"strings"
 )
 
@@ -19,7 +21,7 @@ func main() {
 	//if err != nil {
 	//	log.Fatal("Url ", *url, "output could not be read ", resp.StatusCode)
 	//}
-<<<<<<< HEAD
+
 	//file, _ := ioutil.ReadFile(`./data.xml`)
 	//content := string(file)
 	//re := regexp.MustCompile(`<li.*?>.*?title="(.*?)"`)
