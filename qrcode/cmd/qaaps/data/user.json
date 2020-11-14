@@ -1,0 +1,16 @@
+{
+  "id": 0,
+  "type": "Simple",
+  "users": [
+    {
+      "username": "joe",
+      "email": "joe@email.com",
+      "password": "change it"
+    },
+    {
+      "username": "jane",
+      "email": "jane@email.com",
+      "password": "please change it"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+<users id="0">
+    <type>Simple</type>
+    <user>
+        <secrets>
+            <username>joe</username>
+            <password>change it</password>
+        </secrets>
+        <email>joe@email.com</email>
+    </user>
+    <user>
+        <secrets>
+            <username>jane</username>
+            <password>please change it</password>
+        </secrets>
+        <email>jane@email.com</email>
+    </user>
+</users>
