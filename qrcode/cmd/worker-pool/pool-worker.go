@@ -3,12 +3,12 @@
 package main
 
 import (
-"fmt"
-"log"
-"sync"
-"time"
+	"fmt"
+	log "github.com/sirupsen/logrus"
+	"sync"
+	"time"
 
-"github.com/goinggo/work"
+	"github.com/goinggo/work"
 )
 
 // names provides a set of names to display.

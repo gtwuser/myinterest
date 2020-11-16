@@ -3,8 +3,8 @@ package main
 import (
 	"bufio"
 	"flag"
+	log "github.com/sirupsen/logrus"
 	"io/ioutil"
-	"log"
 	"net/http"
 	"os"
 )

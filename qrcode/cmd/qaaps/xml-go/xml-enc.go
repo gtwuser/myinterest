@@ -4,10 +4,9 @@ import (
 	"bytes"
 	"encoding/json"
 	"encoding/xml"
-	"fmt"
-	"github.com/kapjoshi/myinterest/qrcode/cmd/qaaps/json-go/types"
+	"github.com/kapjoshi/myinterest/qrcode/cmd/qaaps/types"
+	log "github.com/sirupsen/logrus"
 	"io"
-	"log"
 	"os"
 )
 
@@ -31,7 +30,7 @@ func main() {
 	if err != nil {
 		log.Fatalln("error in closing file", err)
 	} else {
-		fmt.Println("Closed")
+		log.Println("Closed")
 	}
 	uf, err := os.Open(xmlFile)
 	if err != nil {
@@ -44,7 +43,7 @@ func main() {
 	if err != nil {
 		log.Fatalln("decoding failed", err)
 	}
-	fmt.Println(usersDec)
+	log.Println(usersDec)
 }
 
 func readJsonFile() *types.UsersDb {

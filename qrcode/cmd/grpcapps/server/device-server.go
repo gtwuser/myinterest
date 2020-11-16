@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
 	"github.com/kapjoshi/myinterest/qrcode/cmd/grpcapps/pob"
+	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
-	"log"
 	"net/http"
 )
 

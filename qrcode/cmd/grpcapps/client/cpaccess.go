@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/json"
 	"fmt"
-	"log"
+	log "github.com/sirupsen/logrus"
 )
 
 type TokenAccess struct {
@@ -12,37 +12,37 @@ type TokenAccess struct {
 
 func main() {
 
-//	s := `{
-//  "portalAccounts": [
-//    {
-//      "customerId": "c1",
-//      "policies": [
-//        {
-//          "role": "admin",
-//          "assetGroups": [
-//            {
-//              "name": "agName1",
-//              "id": "ag1"
-//            },
-//            {
-//              "name": "agName3",
-//              "id": "ag3"
-//            }
-//          ]
-//        },
-//        {
-//          "role": "view",
-//          "assetGroups": [
-//            {
-//              "name": "agName2",
-//              "id": "ag2"
-//            }
-//          ]
-//        }
-//      ]
-//    }
-//  ]
-//}`
+	//	s := `{
+	//  "portalAccounts": [
+	//    {
+	//      "customerId": "c1",
+	//      "policies": [
+	//        {
+	//          "role": "admin",
+	//          "assetGroups": [
+	//            {
+	//              "name": "agName1",
+	//              "id": "ag1"
+	//            },
+	//            {
+	//              "name": "agName3",
+	//              "id": "ag3"
+	//            }
+	//          ]
+	//        },
+	//        {
+	//          "role": "view",
+	//          "assetGroups": [
+	//            {
+	//              "name": "agName2",
+	//              "id": "ag2"
+	//            }
+	//          ]
+	//        }
+	//      ]
+	//    }
+	//  ]
+	//}`
 	s2 := `{
     "access_token": "OsGPz5F5JhRMXuR2qFmossfPrWZz",
     "token_type": "Bearer",

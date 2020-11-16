@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"log"
+	log "github.com/sirupsen/logrus"
 	"os"
 	"strings"
 )
@@ -11,7 +11,7 @@ import (
 func main() {
 
 	flag.Parse()
-	if flag.NArg() < 1{
+	if flag.NArg() < 1 {
 		fmt.Printf("No subcommands provided\n")
 		os.Exit(1)
 	}
@@ -26,12 +26,12 @@ func main() {
 		fmt.Printf("No subcommands\n")
 	}
 
-	if err != nil{
+	if err != nil {
 		log.Fatal("Error while executing subcommands\n")
 	}
 }
 
-func add(subCmd string) error{
+func add(subCmd string) error {
 	return nil
 }
 

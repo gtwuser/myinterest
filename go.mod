@@ -3,7 +3,7 @@ module github.com/kapjoshi/myinterest
 go 1.13
 
 require (
-	github.com/goinggo/work v0.0.0-20150417195554-e2c4d06662b4 // indirect
+	github.com/goinggo/work v0.0.0-20150417195554-e2c4d06662b4
 	github.com/golang/protobuf v1.4.2
 	github.com/grpc-ecosystem/grpc-gateway v1.14.6
 	github.com/lestrrat-go/jwx v1.0.4 // indirect

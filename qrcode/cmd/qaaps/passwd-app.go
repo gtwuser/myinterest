@@ -5,7 +5,9 @@ import (
 	"golang.org/x/crypto/bcrypt"
 	"net/textproto"
 )
+
 type MD map[string][]string
+
 func main() {
 	md := MD{}
 	var key string
@@ -29,7 +31,7 @@ func generateCanonical() string {
 	return resp
 }
 
-func generatePasswd() string{
+func generatePasswd() string {
 	adminPass, _ := bcrypt.GenerateFromPassword(
 		[]byte("Cosco123"), bcrypt.DefaultCost,
 	)

@@ -9,8 +9,8 @@ func main() {
 	log.SetLevel(log.DebugLevel)
 	log.SetOutput(os.Stdout)
 	log.SetFormatter(&log.TextFormatter{
-		FullTimestamp:    true,
-		FieldMap: log.FieldMap{
+		FullTimestamp: true,
+		FieldMap:      log.FieldMap{
 			//FieldKeyTime:  "@timestamp",
 			//FieldKeyLevel: "@level",
 			//FieldKeyMsg:   "@message",

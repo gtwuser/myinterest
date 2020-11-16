@@ -3,10 +3,9 @@ package main
 import (
 	"bytes"
 	"encoding/json"
-	"fmt"
-	"github.com/kapjoshi/myinterest/qrcode/cmd/qaaps/json-go/types"
+	"github.com/kapjoshi/myinterest/qrcode/cmd/qaaps/types"
+	log "github.com/sirupsen/logrus"
 	"io"
-	"log"
 	"os"
 )
 
@@ -23,7 +22,7 @@ func main() {
 	if err != nil {
 		log.Fatalln("error decoding", err)
 	}
-	fmt.Println(*users)
+	log.Println(*users)
 }
 
 func createJsonFile() {

@@ -1,9 +1,9 @@
 package main
 
 import (
+	log "github.com/sirupsen/logrus"
 	"io"
 	"io/ioutil"
-	"log"
 	"net"
 	"os"
 )
@@ -22,13 +22,13 @@ func main() {
 
 	_, err = io.WriteString(conn, data)
 	errMsg(err, "Error in writing data")
-	if err != nil{
+	if err != nil {
 		return
 	}
 
 	//buffer := bytes.Buffer{}
 	var buffer [1024]byte
-	for{
+	for {
 		n, err := conn.Read(buffer[:])
 		errMsg(err, "error in reading content")
 		if err != nil {

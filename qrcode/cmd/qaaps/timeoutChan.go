@@ -17,7 +17,7 @@ func main() {
 			fmt.Printf("Search1 time:%v\n", r1)
 		case r2 := <-search("q3"):
 			fmt.Printf("Search2 time:%v\n", r2)
-		case <-time.After(time.Duration(2)*time.Second):
+		case <-time.After(time.Duration(2) * time.Second):
 			fmt.Println("Search timeout")
 		}
 	}
