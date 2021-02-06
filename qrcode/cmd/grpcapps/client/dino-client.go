@@ -3,7 +3,7 @@ package main
 //
 //import (
 //	"fmt"
-//	"github.com/kapjoshi/myinterest/qrcode/cmd/d1/grpcapps/pb"
+//	"github.com/gtwuser/myinterest/qrcode/cmd/d1/grpcapps/pb"
 //	"google.golang.org/grpc"
 //)
 //

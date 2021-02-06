@@ -1,7 +1,7 @@
 {
   "swagger": "2.0",
   "info": {
-    "title": "qrcode/cmd/grpcapps/pob/greet.proto",
+    "title": "greet.proto",
     "version": "version not set"
   },
   "consumes": [

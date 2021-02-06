@@ -3,7 +3,7 @@ package main
 import (
 	"encoding/csv"
 	"encoding/json"
-	"github.com/kapjoshi/myinterest/qrcode/cmd/qaaps/types"
+	"github.com/gtwuser/myinterest/qrcode/cmd/qaaps/types"
 	log "github.com/sirupsen/logrus"
 	"io"
 	"os"
@@ -18,6 +18,7 @@ func main() {
 	//	log.Fatalln("error while creating file ", err)
 	//}
 	//defer f.Close()
+
 	f, err := os.Open(`../data/csv-enc.csv`)
 	if err != nil {
 		log.Fatalln("error while creating file ", err)

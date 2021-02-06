@@ -44,9 +44,9 @@ func main() {
 	}
 
 	var wg sync.WaitGroup
-	wg.Add(10 * len(names))
+	wg.Add(2 * len(names))
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 2; i++ {
 		// Iterate over the slice of names.
 		for _, name := range names {
 			// Create a namePrinter and provide the
