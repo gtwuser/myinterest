@@ -4,7 +4,7 @@ import (
 	"context"
 	"fmt"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	"github.com/kapjoshi/myinterest/qrcode/cmd/grpcapps/pob"
+	"github.com/gtwuser/myinterest/qrcode/cmd/grpcapps/pob"
 	log "github.com/sirupsen/logrus"
 	"google.golang.org/grpc"
 	"net/http"

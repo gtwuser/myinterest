@@ -3,7 +3,7 @@ package main
 import (
 	"bytes"
 	"encoding/json"
-	"github.com/kapjoshi/myinterest/qrcode/cmd/qaaps/types"
+	"github.com/gtwuser/myinterest/qrcode/cmd/qaaps/types"
 	log "github.com/sirupsen/logrus"
 	"io"
 	"os"

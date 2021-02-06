@@ -11,7 +11,7 @@ import (
 
 // This is a compile-time assertion to ensure that this generated file
 // is compatible with the grpc package it is being compiled against.
-const _ = grpc.SupportPackageIsVersion6
+const _ = grpc.SupportPackageIsVersion7
 
 // ManageDeviceClient is the client API for ManageDevice service.
 //
@@ -49,12 +49,19 @@ type ManageDeviceServer interface {
 type UnimplementedManageDeviceServer struct {
 }
 
-func (*UnimplementedManageDeviceServer) ManagedDevice(context.Context, *DeviceRequest) (*DeviceResponse, error) {
+func (UnimplementedManageDeviceServer) ManagedDevice(context.Context, *DeviceRequest) (*DeviceResponse, error) {
 	return nil, status.Errorf(codes.Unimplemented, "method ManagedDevice not implemented")
 }
-func (*UnimplementedManageDeviceServer) mustEmbedUnimplementedManageDeviceServer() {}
+func (UnimplementedManageDeviceServer) mustEmbedUnimplementedManageDeviceServer() {}
 
-func RegisterManageDeviceServer(s *grpc.Server, srv ManageDeviceServer) {
+// UnsafeManageDeviceServer may be embedded to opt out of forward compatibility for this service.
+// Use of this interface is not recommended, as added methods to ManageDeviceServer will
+// result in compilation errors.
+type UnsafeManageDeviceServer interface {
+	mustEmbedUnimplementedManageDeviceServer()
+}
+
+func RegisterManageDeviceServer(s grpc.ServiceRegistrar, srv ManageDeviceServer) {
 	s.RegisterService(&_ManageDevice_serviceDesc, srv)
 }
 
@@ -86,5 +93,5 @@ var _ManageDevice_serviceDesc = grpc.ServiceDesc{
 		},
 	},
 	Streams:  []grpc.StreamDesc{},
-	Metadata: "qrcode/cmd/grpcapps/pob/device.proto",
+	Metadata: "device.proto",
 }
