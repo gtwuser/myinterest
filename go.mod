@@ -13,7 +13,6 @@ require (
 	github.com/open-policy-agent/opa v0.26.0
 	github.com/rs/zerolog v1.20.0
 	github.com/sirupsen/logrus v1.7.0
-	github.com/tidwall/gjson v1.6.8
 	golang.org/x/crypto v0.0.0-20201221181555-eec23a3978ad
 	golang.org/x/net v0.0.0-20200927032502-5d4f70055728
 	google.golang.org/genproto v0.0.0-20210204154452-deb828366460
